@@ -1,0 +1,387 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0b1120;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+/* Navigation */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: transparent;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #9ea9b3;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4aa8ff;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 50px 0;
+}
+
+.intro-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+
+.intro-text h1 span {
+  color: #4aa8ff;
+}
+
+.intro-text h2 {
+  font-size: 2.5rem;
+  color: #4aa8ff;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.hero-image img {
+  width: 350px;
+  filter: brightness(0.8);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #4aa8ff;
+  text-decoration: none;
+}
+
+
+
+
+
+/* About Section */
+.about-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #0b1120;
+  color: #fff;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-section h2 span {
+  color: #4aa8ff;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-image {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border: 2px solid #4aa8ff;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.about-section h3 {
+  font-size: 1.8rem;
+  color: #4aa8ff;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+
+.btn.read-more {
+  padding: 10px 25px;
+  border-radius: 30px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn.read-more:hover {
+  background-color: #0056b3;
+}
+
+/* Optional: Adding small blue circle around the image */
+.about-image::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #4aa8ff;
+  border-radius: 50%;
+  opacity: 0.7;
+  z-index: -1;
+  animation: rotate-border 4s linear infinite;
+}
+
+/* Optional: Border Rotation Animation */
+@keyframes rotate-border {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+
+
+/* Skills Section */
+.skills-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #0b1120;
+  color: #fff;
+}
+
+.skills-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.skills-section h2 span {
+  color: #4aa8ff;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.skills-box {
+  background-color: #142536;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.skills-box h3 {
+  font-size: 1.8rem;
+  color: #4aa8ff;
+  margin-bottom: 20px;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.skill p {
+  font-size: 1rem;
+  width: 120px;
+}
+
+.progress-bar {
+  position: relative;
+  background-color: #1c2b3a;
+  width: 60%;
+  height: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  background-color: #4aa8ff;
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+.skill span {
+  width: 40px;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-box {
+      width: 100%;
+  }
+}
+
+
+
+
+/* General Styles */
+
+/* Container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.section-title span {
+  color: #00f0ff;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-group {
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #00f0ff;
+  border-radius: 5px;
+  background-color: #0c1a25;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #00f0ff;
+  border: none;
+  border-radius: 5px;
+  color: #0c1a25;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00cce7;
+}
+
+/* Footer */
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #0c1a25;
+  color: #00f0ff;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 16px;
+}
